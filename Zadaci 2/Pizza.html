@@ -3,22 +3,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Pizza form</title>
     <!--CSS-->
     <style>
-    table{
+    td,tr,table{
         border:1px solid rgb(161, 161, 161);
         text-align: left;
-
     }
-    th{text-align: center;
-        
+    th{
+        text-align: center;      
     }
-   td,tr{
-    border:1px solid black;
-    text-align: left;
-   }
-   
     </style>
     <!--CSS-->
 
@@ -31,7 +25,7 @@
             </tr>
             <tr>
                 <td><value>Name</value></td>
-                <td><input type="text" name="name"></input><br></td>
+                <td><input type="text" name="name" maxlength="20"></input><br></td>
             </tr>
             <tr>
                 <td class="a">Pizza Topping</td>
@@ -60,7 +54,7 @@
                 
                 <td colspan="2">
                     <label>Delivery Instruction</label><br>
-                    <textarea name="delivery" cols="50" rows="4"></textarea>
+                    <textarea name="delivery" cols="50" rows="4" maxlength="100"></textarea>
                 </td>
             </tr>
             <tr>
